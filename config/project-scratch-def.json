@@ -1,7 +1,7 @@
 {
-  "orgName": "stephan.garcia company",
+  "orgName": "Apex SDK Workshop",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "features": ["EnableSetPasswordInApi", "Slack"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
