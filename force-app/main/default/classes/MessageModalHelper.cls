@@ -1,4 +1,4 @@
-public class MessageModal {
+public class MessageModalHelper {
   public static Slack.ModalView getMessageModalView(String title, List<String> messages) {
     Slack.ViewReference viewReference;
     Slack.ModalView modalView;

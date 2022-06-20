@@ -20,10 +20,12 @@ public class ActionDispatcher_CreateAccount extends Slack.ActionDispatcher {
     private Slack.ModalView createNewAccount() {
       try {
 
+        
+
         // Define the response parameters
         String title = 'Account Created';
         String body = 'An account for '+'Account Name Placeholder'+' has been created! :white_check_mark:';
-        return MessageModaHelper.getMessageModalView(title, new List<String>{ body });
+        return MessageModalHelper.getMessageModalView(title, new List<String>{ body });
       } catch (Exception e) {
         return getMessageModal(e.getMessage());
       }
@@ -32,7 +34,7 @@ public class ActionDispatcher_CreateAccount extends Slack.ActionDispatcher {
     private Slack.ModalView getMessageModal(String errorMessage) {
       String title = 'Error Record Creation';
       String body = 'There was a problem creating your record.' + '\n' + errorMessage;
-      return MessageModaHelper.getMessageModalView(title, new List<String>{ body });
+      return MessageModalHelper.getMessageModalView(title, new List<String>{ body });
     }
   }
 }
